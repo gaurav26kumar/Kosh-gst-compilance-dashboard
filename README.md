@@ -39,13 +39,17 @@ A modern GST (Goods & Services Tax) compliance tool built for Indian businesses 
 
 ##  Screenshots
 
- ![Landing — dark] (<img width="1840" height="895" alt="Screenshot 2026-07-08 153122" src="https://github.com/user-attachments/assets/596a87a1-2f65-4cc8-9006-ac1cc00e3eb0" /> )
+ ### Landing page (Dark)
+ <img width="1840" height="895" alt="Screenshot 2026-07-08 153122" src="https://github.com/user-attachments/assets/596a87a1-2f65-4cc8-9006-ac1cc00e3eb0" /> 
  
- ![Landing — light](<img width="1848" height="895" alt="Screenshot 2026-07-08 153145" src="https://github.com/user-attachments/assets/b703912c-f2e5-4e8e-9725-9c375a54d06e" />)
+### Landing Page (Light)
+<img width="1848" height="895" alt="Screenshot 2026-07-08 153145" src="https://github.com/user-attachments/assets/b703912c-f2e5-4e8e-9725-9c375a54d06e" />
  
- ![Dashboard](<img width="1844" height="798" alt="Screenshot 2026-07-08 153201" src="https://github.com/user-attachments/assets/fafa55a6-1e7b-43b8-9823-5d040382ca47" /> )
- 
- ![New Invoice](<img width="1850" height="898" alt="Screenshot 2026-07-08 153328" src="https://github.com/user-attachments/assets/a3530818-ff98-49d2-865c-2a329ce76b35" />)
+### Dashboard
+<img width="1844" height="798" alt="Screenshot 2026-07-08 153201" src="https://github.com/user-attachments/assets/fafa55a6-1e7b-43b8-9823-5d040382ca47" /> 
+
+ ### New Invoice
+ <img width="1850" height="898" alt="Screenshot 2026-07-08 153328" src="https://github.com/user-attachments/assets/a3530818-ff98-49d2-865c-2a329ce76b35" />
 
 ##  Getting Started
 
