@@ -13,7 +13,7 @@ A modern GST (Goods & Services Tax) compliance tool built for Indian businesses 
 
 ---
 
-## ✨ Features
+##  Features
 
 - **3D marketing landing page** — an Apple-style hero built with Three.js, introducing the Ledger API and Dashboard products before visitors ever sign in.
 - **Light & dark mode, everywhere** — one shared theme system (navy/paper + brass/teal accents) covers the landing page and the full app, persists across sessions, and switches with no flash on load.
@@ -26,7 +26,7 @@ A modern GST (Goods & Services Tax) compliance tool built for Indian businesses 
 - **Secure by default** — Supabase Auth + Postgres Row Level Security means every user only ever sees their own data.
 - **Production-hardened** — themed 404 and error pages, a generated favicon, loading states, and a clean `next build` with strict TypeScript and ESLint.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Choice |
 |---|---|
@@ -37,18 +37,14 @@ A modern GST (Goods & Services Tax) compliance tool built for Indian businesses 
 | Backend | [Supabase](https://supabase.com) — Postgres + Auth (no separate API server) |
 | Charts | [Recharts](https://recharts.org) |
 
-## 📸 Screenshots
+##  Screenshots
 
-> _Add a screenshot or two of the landing page (light + dark), the dashboard, and the invoice form here — this is the single highest-impact addition you can make to this README._
->
-> ```md
-> ![Landing — dark](./docs/screenshot-landing-dark.png)
-> ![Landing — light](./docs/screenshot-landing-light.png)
-> ![Dashboard](./docs/screenshot-dashboard.png)
-> ![New Invoice](./docs/screenshot-invoice.png)
-> ```
+ ![Landing — dark] (<img width="1840" height="895" alt="Screenshot 2026-07-08 153122" src="https://github.com/user-attachments/assets/596a87a1-2f65-4cc8-9006-ac1cc00e3eb0" /> )
+ ![Landing — light](<img width="1848" height="895" alt="Screenshot 2026-07-08 153145" src="https://github.com/user-attachments/assets/b703912c-f2e5-4e8e-9725-9c375a54d06e" />)
+ ![Dashboard](<img width="1844" height="798" alt="Screenshot 2026-07-08 153201" src="https://github.com/user-attachments/assets/fafa55a6-1e7b-43b8-9823-5d040382ca47" /> )
+ ![New Invoice](<img width="1850" height="898" alt="Screenshot 2026-07-08 153328" src="https://github.com/user-attachments/assets/a3530818-ff98-49d2-865c-2a329ce76b35" />)
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Requirements
 
@@ -120,11 +116,11 @@ supabase/
 └── schema.sql             # Full DB schema + RLS policies — run this first
 ```
 
-## 🎨 Theming
+##  Theming
 
 Light and dark mode are driven by CSS custom properties defined once in `globals.css` (`--bg`, `--surface`, `--ink`, `--brass`, `--teal`, etc.) and flipped by a single `data-theme` attribute on `<html>`. `ThemeProvider` reads the saved preference from `localStorage` before React hydrates (via an inline script in the root layout) so there's no flash of the wrong theme, and the same toggle component is used on the landing page nav and in the app's sidebar — switching one switches both.
 
-## 🧮 How the tax engine works
+##  How the tax engine works
 
 GST in India isn't a flat rate — it depends on where the buyer and seller are registered:
 
@@ -133,7 +129,7 @@ GST in India isn't a flat rate — it depends on where the buyer and seller are 
 
 The app determines this automatically by comparing the state codes embedded in the seller's and buyer's GSTIN, then applies the correct split for the chosen tax slab (0%, 5%, 12%, 18%, or 28%), with optional cess. It also correctly zeroes out tax collection for **RCM** (recipient pays) and **Export/SEZ under LUT** (no payment of IGST), while still tracking those invoices for compliance records.
 
-## 🌐 Deployment
+##  Deployment
 
 This app deploys cleanly to any platform that supports Next.js 16 (Vercel, Netlify, etc.) since Supabase is the entire backend — there's no separate server to host.
 
@@ -144,7 +140,7 @@ This app deploys cleanly to any platform that supports Next.js 16 (Vercel, Netli
 3. Deploy — Vercel auto-detects Next.js, no config needed.
 4. In Supabase, add your production URL under **Authentication → URL Configuration** so auth redirects work correctly.
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] PDF export for invoices
 - [ ] GSTR-1 / GSTR-3B export formats
