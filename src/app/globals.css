@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Let dark: utilities respond to our manual data-theme attribute instead of
+   the OS-level prefers-color-scheme media query. */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* Route Tailwind's default sans/mono stacks through the fonts loaded in
+   RootLayout, so every existing font-sans / font-mono usage in the app
+   automatically picks up Inter / IBM Plex Mono without editing each file. */
+@theme {
+  --font-sans: var(--font-inter), -apple-system, sans-serif;
+  --font-mono: var(--font-plex-mono), monospace;
+}
+
+:root {
+  --bg: #f4f6f5;
+  --surface: #ffffff;
+  --surface-2: #fbfbfa;
+  --border: rgba(11, 18, 32, 0.1);
+  --ink: #0b1220;
+  --ink-soft: #566072;
+  --ink-faint: #8a93a3;
+  --brass: #a9782e;
+  --brass-strong: #8e6524;
+  --brass-glow: rgba(169, 120, 46, 0.28);
+  --teal: #147a63;
+  --teal-5: rgba(20, 122, 99, 0.05);
+  --teal-10: rgba(20, 122, 99, 0.1);
+  --teal-20: rgba(20, 122, 99, 0.2);
+  --teal-30: rgba(20, 122, 99, 0.3);
+  --teal-50: rgba(20, 122, 99, 0.5);
+  --teal-soft: var(--teal-10);
+  --shadow: rgba(11, 18, 32, 0.1);
+}
+
+[data-theme='dark'] {
+  --bg: #090d16;
+  --surface: #121a2c;
+  --surface-2: #161f35;
+  --border: rgba(255, 255, 255, 0.09);
+  --ink: #eef1f6;
+  --ink-soft: #9aa3b8;
+  --ink-faint: #626c82;
+  --brass: #e0b25c;
+  --brass-strong: #f0c878;
+  --brass-glow: rgba(224, 178, 92, 0.3);
+  --teal: #3fd1aa;
+  --teal-5: rgba(63, 209, 170, 0.05);
+  --teal-10: rgba(63, 209, 170, 0.1);
+  --teal-20: rgba(63, 209, 170, 0.2);
+  --teal-30: rgba(63, 209, 170, 0.3);
+  --teal-50: rgba(63, 209, 170, 0.5);
+  --teal-soft: var(--teal-10);
+  --shadow: rgba(0, 0, 0, 0.55);
+}
+
+html {
+  background: var(--bg);
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  border-color: var(--border);
+}
+
+::selection {
+  background: var(--brass-glow);
+}
